@@ -8,7 +8,30 @@ The simulator allows for assigning different behavior rules to each player, such
 
 The simulator is a hobby project. There are still many things I am working on, and I hope to improve them someday.
 
-## How to Use
+## 🆕 LLM-Based Players
+
+**NEW FEATURE**: You can now replace the hardcoded AI with Large Language Models (GPT-4, Claude, etc.) that make decisions via API calls!
+
+Instead of following predefined strategies, LLM players:
+- Read natural language descriptions of the game state
+- Make strategic decisions based on reasoning
+- Learn from context and adapt their strategy
+
+**Quick Start:**
+```bash
+# Install dependencies
+pip install requests
+
+# Set your API key
+export OPENAI_API_KEY="your-key-here"
+
+# Run LLM simulation
+python scripts/simulate_llm.py
+```
+
+📖 **See [README_LLM.md](README_LLM.md) for detailed documentation**
+
+## How to Use (Standard Simulation)
 
 1. Edit `settings.py` to set the parameters you want for your simulation.
 2. Run `simulate.py` to start the simulation.
@@ -110,3 +133,4 @@ As I mentioned, it's a hobby project, so no guarantees here. But if I ever get t
 - What is fair starting money?
 - What is a fair trade price?
 - What is a fair auction price?
+# MonoManiac
