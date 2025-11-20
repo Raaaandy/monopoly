@@ -2,7 +2,7 @@ from google import genai
 from google.genai import types
 
 # API_KEY = userdata.get('GOOGLE_API_KEY')
-API_KEY = "AIzaSyBa3kG9Sc2On_DeaMGENdDR9rglISWSfUo"
+API_KEY = "key-here"
 
 client = genai.Client(api_key=API_KEY)
 chat = client.chats.create(

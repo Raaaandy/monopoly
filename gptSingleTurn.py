@@ -1,8 +1,7 @@
 from openai import OpenAI
 
 # Hardcoded API key
-API_KEY = "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"
-
+API_KEY = "key-here"
 client = OpenAI(api_key=API_KEY)
 
 def main():
